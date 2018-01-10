@@ -7,7 +7,9 @@
 ## Prerequisite
 * Minikube 를 사용 
 * Kubectl 클라이언트 설치
+* [프레젠테이션][17]
 * [설치가이드][16]
+
 
 ## Scenario
 
@@ -204,3 +206,4 @@ minikube stop
 https://github.com/pires/hazelcast-kubernetes/
 "Hazelcast Discovery SPI example"
 [16]: https://drive.google.com/open?id=1e3qiGwLe7fr55FRagHe_162Pec0Qc16ZViZhMWkUtgw "Kubernetes client $ Minikube install guide"
+[17]: https://docs.google.com/a/plegma.io/presentation/d/1uE4Rdtibf0tNOVbmht4o1Ch1gpRyEcmAi-S0OWjbqqQ/edit?usp=sharing "meetup presentation"
