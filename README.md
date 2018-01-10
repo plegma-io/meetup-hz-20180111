@@ -145,46 +145,46 @@ minikube 커맨드를 실행하여 서비스를 실행 할 수 있습니다:
 hazelcast.xml 에 커스텀 세팅을 하여 헤이즐캐스트 클러스터를 배포 하는 등의 더욱 재미난 시간이 준비되어있습니다.
 
 ---
-### Kubernetes & Minikube commands
+### Kubernetes & Minikube cheat sheet
 #### Kubernetes commands:
-```
-//show pods
+```sh
+#show pods
 kubectl get pods 
-//show more info on pods
+#show more info on pods like IP address
 kubectl get pods --output=wide 
-//show all pods including system pods
+#show all pods including system pods
 kubectl get pods --all-namespaces 
 
-//show detail description
+#display detail description
 kubectl describe deployment/hazelcast-deployment 
 
-//scale-out to 4 replicas
+#scale-out to 4 replicas
 kubectl scale --replicas=4 deployment/hazelcast-deployment 
 
-//show logs
+#display logs from $POD_NAME
 kubectl log $POD_NAME
 
-//delete all pods
+#delete all pods
 kubectl delete --all pods --namespace=default 
 
-//delete all deployments
+#delete all deployments
 kubectl delete --all deployments --namespace=default
 
-//delete all services
+#delete all services
 kubectl delete --all services --namespace=default 
 ```
 #### Minikube commands:
-```
-//start minikube with memory size set
+```sh
+#start minikube with memory size set
 minikube start --memory 8192 
 
-//launch dashboard
+#launch dashboard
 minikube dashboard
 
-//show status of minikube
+#show status of minikube
 minikube status
 
-//shutdown minikube
+#shutdown minikube
 minikube stop
 ```
 
